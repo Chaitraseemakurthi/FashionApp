@@ -218,7 +218,7 @@
               <div class="product-image" style='background-image: url("${productData.images[0].url}");'></div>
               <div class="product-info">
                   <p class="product-name">${productData.name}</p>
-                  <p class="product-size">Size: ${productData.variantSizes[0].filterCode}</p>
+                  <p class="product-size">Size: ${productData.variantSizes && productData.variantSizes.length > 0 ? productData.variantSizes[0].filterCode : "S"}</p>
               </div>
           </div>
           <div class="ctr">
